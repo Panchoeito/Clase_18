@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from clase_18.views import index
+from AppCoder.views import agrega_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
+    path('agrega_curso/', agrega_curso)
 ]
