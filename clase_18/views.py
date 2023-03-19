@@ -5,4 +5,4 @@ def index(request):
     diccionario = {"nombre":"Coder"}
     plantilla = loader.get_template("index.html")
     documento = plantilla.render(diccionario)
-    return HttpResponse("")
+    return HttpResponse(documento)
